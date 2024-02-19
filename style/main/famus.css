@@ -1,0 +1,120 @@
+@import 'fonts.css';
+
+/* root */
+:root {
+    --Lato-Italic: 'Lato-Italic';
+    --PTSans-Bold: 'PTSans-Bold';
+    --PTSans-Regular: 'PTSans-Regular';
+    --white: #FFF;
+    --black: #070707;
+    --border-bg: #E5E5E5;
+    --numbers-btn-bg: #FBF7F4;
+    --numbors-color:#545155;
+    --numbers-btn-hover: #070707;
+    --brend-blue: #4A90E2;
+    --grey-dete:#666;
+}
+
+/* root end */
+
+
+.famous-numbers {
+    display: flex;
+    gap: 15px;
+}
+
+.famous-numbers__btn {
+    border-radius: 3px;
+    border: 1px solid var(--border-bg);
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    padding: 15px 24px;
+    background: var(--numbers-btn-bg);
+    color: var(--numbors-color);
+    font-family: var(--MR);
+    transition: all 500ms;
+}
+
+.famous-numbers__btn:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+.famous-numbers__arrow {
+    margin-left: 15px;
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    padding: 15px 24px;
+    border-radius: 4px;
+    background:var(--numbers-btn-bg);
+    color: var(--numbors-color);
+    font-family: var(--MR);
+    transition: all 500ms;
+}
+
+.famous-numbers__arrow:hover {
+    background: var(--numbers-btn-hover);
+    color: var(--white);
+}
+
+
+.famous-title {
+    margin-top: 60px;
+    color: var(--numbers-btn-hover);
+    font-family: var(--PTSans-Regular);
+    font-size: 30px;
+    line-height: 39px;
+}
+
+.famous-catalog {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    grid-auto-rows: 380px;
+}
+
+.famous-item {
+    position: relative;
+}
+
+.famous-item__img {
+    border-radius: 6px;
+}
+
+.famous-item__btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    padding: 4px 12px;
+    color: var(--white);
+    text-align: justify;
+    font-family: var(--PR);
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 62px;
+    width: 100%;
+    background: var(--brend-blue);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.famous-item__title {
+    margin-top: 20px;
+    color:var(--numbers-btn-hover);
+    font-family: var(--PTSans-Bold);
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.famous-item__date {
+    margin-top: 10px;
+    color: var(--grey-dete);
+    font-family: var(--PR);
+    font-size: 14px;
+    line-height: 18px;
+}
